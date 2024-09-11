@@ -10,8 +10,8 @@ from .models import Post, UserStatistics
 #Question 2: Django signals run in the same thread as the caller.
 #Question 3: Django signals run in the same database transaction as the caller.
 # The code shows how Django signals work. It's like a way to send messages between 
-# different parts of your Django app. When something happens, like a new post being created,
-# Django sends a signal. Other parts of your app can listen for these signals and do things in response.
+# different parts of the Django app. When something happens, like a new post being created,
+# Django sends a signal. Other parts of the app can listen for these signals and do things in response.
 # In this example, i have created two signals: one to notify the author of a new post and another to 
 # update user statistics. Both signals run in the same order as the code that triggered them, 
 # and they use the same database connection.
